@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase" failures="0" tests="0" time="0.0" errors="0">
+  <properties/>
+  <testcase name="@BeforeSuite setupSelenium" time="0.0" classname="com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase">
+    <failure type="java.lang.NoClassDefFoundError" message="org/mortbay/http/HttpHandler">
+      <![CDATA[java.lang.NoClassDefFoundError: org/mortbay/http/HttpHandler
+	at com.qait.gold.testframework.selenium.util.SeleniumProxySingleton.startJettyProxy(SeleniumProxySingleton.java:35)
+	at com.qait.gold.testframework.selenium.util.SeleniumProxySingleton.makeSureWeHaveAJettyProxyRunning(SeleniumProxySingleton.java:21)
+	at com.qait.gold.testframework.selenium.util.SeleniumSingletonFactory.getInstance(SeleniumSingletonFactory.java:14)
+	at com.qait.gold.testframework.powersearch.PowerSearchTestCase.setupSelenium(PowerSearchTestCase.java:28)
+Caused by: java.lang.ClassNotFoundException: org.mortbay.http.HttpHandler
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	... 19 more
+... Removed 15 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

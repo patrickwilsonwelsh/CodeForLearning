@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20090818</FitNesseVersion>
+  <rootPath>ScriptTable</rootPath>
+    <result>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2538932846616624990');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2538932846616624990"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.UserGuide.SliM.SetUp">.FitNesse.UserGuide.SliM.SetUp</a> <a href="FitNesse.UserGuide.SliM.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-2538932846616624990"><div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7671255323778758091');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7671255323778758091"/>
+	</a>
+&nbsp;<span class="meta">setup </span>
+	<div class="hidden" id="-7671255323778758091"><table border="1" cellspacing="0" _TABLENUMBER=3429992515504774414>
+<tr><td>import</td>
+</tr>
+<tr><td>fitnesse.slim.test</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<table border="1" cellspacing="0" _TABLENUMBER=239868679974251721>
+<tr><td>script</td>
+<td><span class="pass">login dialog driver</span></td>
+<td>Bob</td>
+<td colspan="2">xyzzy</td>
+</tr>
+<tr><td><span class="pass">login with username</span></td>
+<td>Bob</td>
+<td>and password</td>
+<td colspan="2">xyzzy</td>
+</tr>
+<tr><td>check</td>
+<td>login message</td>
+<td colspan="3"><span class="pass">Bob logged in.</span></td>
+</tr>
+<tr><td><span class="pass">reject</span></td>
+<td>login with username</td>
+<td>Bob</td>
+<td>and password</td>
+<td>bad password</td>
+</tr>
+<tr><td>check</td>
+<td>login message</td>
+<td colspan="3"><span class="pass">Bob not logged in.</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>login with username</td>
+<td>Bob</td>
+<td>and password</td>
+<td>xyzzy</td>
+</tr>
+<tr><td>note</td>
+<td colspan="4">this is a comment</td>
+</tr>
+<tr><td>show <span class="error">Method numberOfLoginAttempts[1] not found in fitnesse.slim.test.LoginDialogDriver.</span></td>
+<td>number of login attempts</td>
+<td colspan="3"></td>
+</tr>
+<tr><td>$symbol<-[Bob logged in.]</td>
+<td colspan="4">login message</td>
+</tr>
+</table>
+<br/><br/><br/><br/><br/><br/>The fixture for this table is:<br/><pre>public class LoginDialogDriver {<br/>  private String userName;<br/>  private String password;<br/>  private String message;<br/>  private int loginAttempts;<br/><br/>  public LoginDialogDriver(String userName, String password) {<br/>    this.userName = userName;<br/>    this.password = password;<br/>  }<br/><br/>  public boolean loginWithUsernameAndPassword(String userName, String password) {<br/>    loginAttempts++;<br/>    boolean result = this.userName.equals(userName) &amp;&amp; this.password.equals(password);<br/>    if (result)<br/>      message = String.format("%s logged in.", this.userName);<br/>    else<br/>      message = String.format("%s not logged in.", this.userName);<br/>    return result;<br/>  }<br/><br/>  public String loginMessage() {<br/>    return message;<br/>  }<br/><br/>  public int numberOfLoginAttempts() {<br/>    return loginAttempts;<br/>  }<br/>} </pre><br/><br/>This should be pretty clear.  Each row is a single instruction in the script.<br/><ul>
+	<li>The first row is simply the word "Script" followed by the name and constructor arguments of the fixture (known as the "actor") that will be used by the rest of the table.  If there is no actor specified then the previous script table's actor on this test page will be used.</li>
+</ul>
+<br/><ul>
+	<li>Most instructions involve some kind of function call.  The name of the function is assembled from tokens in <i>every other</i> cell.  The arguments of the function are the intervening cells.</li>
+</ul>
+<br/><ul>
+	<li>A function alone in a row will turn red or green if it returns a boolean.  Otherwise it will simply remain uncolored.</li>
+</ul>
+<br/><ul>
+	<li>If the word <i>check</i> is in the first cell of a row, then a function call follows it.  The last cell of the table is the expression we expect to be matched by what the function actually returns.</li>
+</ul>
+<br/><ul>
+	<li>If the word <i>check not</i> is in the first cell of a row, then a function call follows it.  The last cell of the table is the expression we expect <span class="red"><i>not</i></span> to be matched by what the function actually returns.</li>
+</ul>
+<br/><ul>
+	<li>If the word <i>ensure</i> is in the first cell, then it should be followed by a function that should return a boolean true for green and false for red.</li>
+</ul>
+<br/><ul>
+	<li>If the word <i>reject</i> is in the first cell, then it should be followed by a function that should return a boolean false for green and true for red.</li>
+</ul>
+<br/><ul>
+	<li>If the word <i>note</i> is in the first cell, all other cells in that row will be ignored.</li>
+	<ul>
+		<li>Or if the first cell is blank.</li>
+		<li>Or if the first cell begins with # or *.</li>
+	</ul>
+</ul>
+<br/><ul>
+	<li>If the word <i>show</i> is in the first cell, then it should be followed by a function.  A new cell will be added when the test is run, and it will contain the return value of the function.</li>
+</ul>
+<br/><ul>
+	<li>If a symbol assignment is in the first cell, then it should be followed by a functions.  The symbol is assigned the value returned by that function.</li>
+</ul>
+<br/><ul>
+	<li>If the word <i>start</i> appears in the first cell, then the rest of the row is the name and constructor arguments for a new actor, which replaces the existing actor.</li>
+</ul>
+<br/><br/><br/>]]></content>
+    <relativePageName>ScriptTable</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.slim.test]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_1</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(login dialog driver)]]></col>
+                    <col><![CDATA[Bob]]></col>
+                    <col><![CDATA[xyzzy]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(login with username)]]></col>
+                    <col><![CDATA[Bob]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[xyzzy]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[login message]]></col>
+                    <col><![CDATA[pass(Bob logged in.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(reject)]]></col>
+                    <col><![CDATA[login with username]]></col>
+                    <col><![CDATA[Bob]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[bad password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[login message]]></col>
+                    <col><![CDATA[pass(Bob not logged in.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[login with username]]></col>
+                    <col><![CDATA[Bob]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[xyzzy]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[note]]></col>
+                    <col><![CDATA[this is a comment]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show error(Method numberOfLoginAttempts[1] not found in fitnesse.slim.test.LoginDialogDriver.)]]></col>
+                    <col><![CDATA[number of login attempts]]></col>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$symbol<-[Bob logged in.]]]></col>
+                    <col><![CDATA[login message]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.slim.test]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_0, make, scriptTableActor, LoginDialogDriver, Bob, xyzzy]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[login dialog driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(login dialog driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_1, call, scriptTableActor, loginWithUsernameAndPassword, Bob, xyzzy]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[Bob]]></expected>
+                              <evaluationMessage><![CDATA[Bob]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[xyzzy]]></expected>
+                              <evaluationMessage><![CDATA[xyzzy]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[login with username]]></expected>
+                              <evaluationMessage><![CDATA[pass(login with username)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_2, call, scriptTableActor, loginMessage]]]></instruction>
+        <slimResult><![CDATA[Bob logged in.]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_2</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Bob logged in.]]></actual>
+                              <expected><![CDATA[Bob logged in.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Bob logged in.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_3, call, scriptTableActor, loginWithUsernameAndPassword, Bob, bad password]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>RejectActionExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[reject]]></expected>
+                              <evaluationMessage><![CDATA[pass(reject)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_3</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_3</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_4, call, scriptTableActor, loginMessage]]]></instruction>
+        <slimResult><![CDATA[Bob not logged in.]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_4</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Bob not logged in.]]></actual>
+                              <expected><![CDATA[Bob not logged in.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Bob not logged in.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_5, call, scriptTableActor, loginWithUsernameAndPassword, Bob, xyzzy]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_5</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_5</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_5</instructionId>
+          <col>4</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_6, call, scriptTableActor, numberOfLoginAttempts, ]]]></instruction>
+        <slimResult><![CDATA[!error:Method numberOfLoginAttempts[1] not found in fitnesse.slim.test.LoginDialogDriver.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_6</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[!error:Method numberOfLoginAttempts[1] not found in fitnesse.slim.test.LoginDialogDriver.]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show error(Method numberOfLoginAttempts[1] not found in fitnesse.slim.test.LoginDialogDriver.)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_6</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_7, callAndAssign, symbol, scriptTableActor, loginMessage]]]></instruction>
+        <slimResult><![CDATA[Bob logged in.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_7</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[Bob logged in.]]></actual>
+                              <expected><![CDATA[$symbol=]]></expected>
+                              <evaluationMessage><![CDATA[$symbol<-[Bob logged in.]]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

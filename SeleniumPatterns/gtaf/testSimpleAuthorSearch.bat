@@ -1,0 +1,2 @@
+set CLASSPATH=.;build/classes;build/lib/selenium-java-client-driver.jar;build/lib/junit-4.6.jar;build/lib/fitnesse.jar;build/lib/fitlibrary.jar
+java junit.textui.TestRunner com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase

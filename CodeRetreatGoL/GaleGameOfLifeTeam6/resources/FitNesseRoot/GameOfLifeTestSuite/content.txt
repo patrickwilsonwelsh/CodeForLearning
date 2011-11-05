@@ -1,0 +1,9 @@
+GameOfLifeTestSuite.StillLifeTests
+GameOfLifeTestSuite.OscillatorTests
+GameOfLifeTestSuite.GliderTests
+
+!define TEST_SYSTEM {slim}
+!path /Users/patrick/Documents/workspace/GaleGameOfLifeTeam6/bin/
+!path /Users/patrick/Documents/workspace/GaleGameOfLifeTeam6/resources/fitnesse.jar
+
+

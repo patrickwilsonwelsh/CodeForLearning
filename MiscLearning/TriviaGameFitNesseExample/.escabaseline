@@ -1,0 +1,343 @@
+# Enerjy Software baseline data (files=31, problems=311).
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/AddRemovePlayerFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'AddRemovePlayerFixture' missing constructor
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'playerName'
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/BoardPlaceFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'BoardPlaceFixture' missing constructor
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'placeNumber'
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/BoardPlayerFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'BoardPlayerFixture' missing constructor
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'place'
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0076:JAVA0076 Use of magic number '11'
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/GameTurnFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'GameTurnFixture' missing constructor
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'roll'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'rightAnswer'
+problem: JAVA0160:JAVA0160 Method 'takeATurn' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0160:JAVA0160 Method 'player' does not throw specified exception 'java.lang.Throwable'
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/GoldCoinFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'GoldCoinFixture' missing constructor
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'playerName'
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/MovePlayerFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'MovePlayerFixture' missing constructor
+problem: JAVA0098:JAVA0098 Minimize use of implicit field initializers
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'playerName'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'placeNumber'
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/PlayerRowFixture.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'PlayerRowFixture' missing constructor
+path: /TriviaGameFitNesseExample/fitnesseFixtures/triviaGame/StaticGame.java
+problem: JAVA0011:JAVA0011 Abstract class 'StaticGame' does not contain an abstract method
+problem: JAVA0016:JAVA0016 Abstract class 'StaticGame' contains non-protected constructor
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+path: /TriviaGameFitNesseExample/src/triviaGame/Board.java
+problem: JAVA0136:JAVA0136 33 methods defined in class 'Board' (maximum: 20)
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'REGULAR_CATEGORIES'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'MAX_REGULAR_PLACES'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'MAX_PLACES'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'FIRST_PLACE_INDEX'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'LAST_PLACE_INDEX'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'PENALTY_BOX_INDEX'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'WINNING_PLACE_INDEX'
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0082:JAVA0082 Unnecessary widening cast ((Place)places[FIRST_PLACE_INDEX])
+problem: JAVA0082:JAVA0082 Unnecessary widening cast ((Place)places[LAST_PLACE_INDEX])
+problem: JAVA0082:JAVA0082 Unnecessary widening cast ((Place)places[PENALTY_BOX_INDEX])
+problem: JAVA0082:JAVA0082 Unnecessary widening cast ((Place)places[WINNING_PLACE_INDEX])
+problem: JAVA0130:JAVA0130 Non-static method 'computeNextPlaceIdFor' does not use instance fields
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0254:JAVA0254 Use enhanced for loop construct instead of Iterator
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0130:JAVA0130 Non-static method 'playerIsOn' does not use instance fields
+problem: JAVA0082:JAVA0082 Unnecessary widening cast ((Place)places[WINNING_PLACE_INDEX])
+path: /TriviaGameFitNesseExample/src/triviaGame/Category.java
+problem: JAVA0260:JAVA0260 Class 'Category': use 'enum' instead of Enumerated Type pattern
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'SCIENCE'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'SPORTS'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'POP'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'ROCK'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'WINNING'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'name'
+path: /TriviaGameFitNesseExample/src/triviaGame/CircularQuestionAnswerMap.java
+problem: JAVA0058:JAVA0058 Constructor 'CircularQuestionAnswerMap' calls super()
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+path: /TriviaGameFitNesseExample/src/triviaGame/Game.java
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'MAX_GOLD_COINS'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'MAX_PLAYERS'
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0160:JAVA0160 Method 'takeTurn' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0160:JAVA0160 Method 'takeTurn' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0179:JAVA0179 Local variable 'winningPlayer' hides visible field
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0254:JAVA0254 Use enhanced for loop construct instead of Iterator
+problem: JAVA0082:JAVA0082 Unnecessary widening cast ((Player)players.get(currentPlayer))
+path: /TriviaGameFitNesseExample/src/triviaGame/Place.java
+problem: JAVA0098:JAVA0098 Minimize use of implicit field initializers
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'id'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'questionsAndAnswers'
+problem: JAVA0071:JAVA0071 Strings compared with == (placeString == "PenaltyBox")
+problem: JAVA0071:JAVA0071 Strings compared with == (placeString == "WinningPlace")
+path: /TriviaGameFitNesseExample/src/triviaGame/PlaceMaker.java
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+path: /TriviaGameFitNesseExample/src/triviaGame/Player.java
+problem: JAVA0098:JAVA0098 Minimize use of implicit field initializers
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'numberOfEvenPenaltyBoxRolls'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'name'
+path: /TriviaGameFitNesseExample/src/triviaGame/RuleBook.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'RuleBook' missing constructor
+problem: JAVA0075:JAVA0075 Method parameter 'turnResult' hides field
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+problem: JAVA0130:JAVA0130 Non-static method 'rollIsOdd' does not use instance fields
+path: /TriviaGameFitNesseExample/src/triviaGame/SetOfQuestionsAndAnswers.java
+problem: JAVA0058:JAVA0058 Constructor 'SetOfQuestionsAndAnswers' calls super()
+problem: JAVA0034:JAVA0034 Missing braces in if statement
+path: /TriviaGameFitNesseExample/src/triviaGame/TurnResult.java
+problem: JAVA0098:JAVA0098 Minimize use of implicit field initializers
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'roll'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'rightAnswer'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'player'
+problem: JAVA0116:JAVA0116 Missing javadoc: field 'lastCategory'
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestBoard.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestBoard' missing constructor
+problem: JAVA0076:JAVA0076 Use of magic number '14'
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0160:JAVA0160 Method 'testGetPlaceById' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0179:JAVA0179 Local variable 'theBoard' hides visible field
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetFourthPlace' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0179:JAVA0179 Local variable 'theBoard' hides visible field
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetFirstPlace' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetLastPlace' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetNextPlaceFromFirst' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetNextPlaceFromLast' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testPlaceStringConversion' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '12'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testPlaceIndexTooHigh' does not throw specified exception 'java.lang.Exception'
+problem: JAVA0076:JAVA0076 Use of magic number '9999'
+problem: JAVA0166:JAVA0166 Generic exception 'java.lang.RuntimeException' caught
+problem: JAVA0160:JAVA0160 Method 'testPlaceIndexTooLow' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '9999'
+problem: JAVA0166:JAVA0166 Generic exception 'java.lang.RuntimeException' caught
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestEmptyGame.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestEmptyGame' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestFakeTurns.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestFakeTurns' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0160:JAVA0160 Method 'testOneFakeTurn' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testTwoFakeTurns' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testThreeFakeTurns' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '8'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0179:JAVA0179 Local variable 'theBoard' hides visible field
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testSixGoldCoinsPutsPlayerInWinningPlace' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '10'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testCorrectAnswerInWinningPlaceWinsGame' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '12'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testIncorrectAnswerInWinningPlacePutsYouInPenaltyBox' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '11'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestGameStart.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestGameStart' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testOnceGameStartsPlayersCannotBeRemoved' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0179:JAVA0179 Local variable 'al' hides visible field
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestMovement.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestMovement' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testMovePlayerToNextPlace' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testMovePlayerFromLastToFirstPlace' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'MovePlayerAroundTheBoard' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '12'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestOnePlayerGame.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestOnePlayerGame' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestOnePlayerInPenaltyBox.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestOnePlayerInPenaltyBox' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0160:JAVA0160 Method 'testIncorrectAnswerPutsPlayerInPenaltyBox' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'OneEvenRollPlayerIsStillInPenaltyBox' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testTwoEvenRollsPlayerIsStillInPenaltyBox' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testThreeEvenRollsGetsPlayerOutOfPenaltyBox' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testOddRollGetsPlayerOutOfPenaltyBox' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestParseCategories.java
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestQuestions.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestQuestions' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetQuestionsFromRockPlaceFromGame' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testGetQuestionsFromWinningPlaceFromGame' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '13'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testAllPopPlacesOfCategoryHaveSameSetOfQuestions' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0160:JAVA0160 Method 'testAllSportsPlacesOfCategoryHaveSameSetOfQuestions' does not throw specified exception 'java.lang.Throwable'
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestRealTurns.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestRealTurns' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestSixPlayerGame.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestSixPlayerGame' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestTwoPlayerGame.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestTwoPlayerGame' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+path: /TriviaGameFitNesseExample/tests/triviaGame/TestTwoPlayersInPenaltyBox.java
+problem: JAVA0137:JAVA0137 Non-abstract class 'TestTwoPlayersInPenaltyBox' missing constructor
+problem: JAVA0247:JAVA0247 JUnit 'setUp' should call super.setUp
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '8'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '8'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '8'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0076:JAVA0076 Use of magic number '6'
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter
+problem: JAVA0246:JAVA0246 JUnit assertXXX statement missing message parameter

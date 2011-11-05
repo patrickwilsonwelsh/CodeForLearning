@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20100303</FitNesseVersion>
+  <rootPath>GameOfLifeTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>11</exceptions>
+    </counts>
+    <content><![CDATA[<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5802412712333527837');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5802412712333527837"/>
+	</a>
+&nbsp;<span class="meta">setup </span>
+	<div class="hidden" id="-5802412712333527837"><table border="1" cellspacing="0" _TABLENUMBER=377521139910283500>
+<tr><td>import</td>
+</tr>
+<tr><td>fitnesse.slim.test</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+<tr><td>gameoflife</td>
+</tr>
+</table>
+<br/><span class="meta">variable defined: TEST_SYSTEM=slim</span><br/></div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2875550327317309273>
+<tr><td colspan="3">game of life examples <span class="error">Could not invoke constructor for GameOfLifeExamples[0]</span></td>
+</tr>
+<tr><td>state</td>
+<td>neighbour count</td>
+<td>result</td>
+</tr>
+<tr><td>alive <span class="error">The instance decisionTable_1. does not exist</span></td>
+<td>0 <span class="error">The instance decisionTable_1. does not exist</span></td>
+<td>dead <span class="error">The instance decisionTable_1. does not exist</span></td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>GameOfLifeTest</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.slim.test]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[gameoflife]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[game of life examples error(Could not invoke constructor for GameOfLifeExamples[0])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[state]]></col>
+                    <col><![CDATA[neighbour count]]></col>
+                    <col><![CDATA[result]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[alive error(The instance decisionTable_1. does not exist)]]></col>
+                    <col><![CDATA[0 error(The instance decisionTable_1. does not exist)]]></col>
+                    <col><![CDATA[dead error(The instance decisionTable_1. does not exist)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.slim.test]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_1, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_2, import, gameoflife]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, GameOfLifeExamples]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for GameOfLifeExamples[0]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for GameOfLifeExamples[0]]]></actual>
+                              <expected><![CDATA[game of life examples]]></expected>
+                              <evaluationMessage><![CDATA[game of life examples error(Could not invoke constructor for GameOfLifeExamples[0])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, [[state, neighbour count, result], [alive, 0, dead]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_1. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_2, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_1. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_3, call, decisionTable_1, setState, alive]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_1. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_1. does not exist]]></actual>
+                              <expected><![CDATA[alive]]></expected>
+                              <evaluationMessage><![CDATA[alive error(The instance decisionTable_1. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_4, call, decisionTable_1, setNeighbourCount, 0]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_1. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_1. does not exist]]></actual>
+                              <expected><![CDATA[0]]></expected>
+                              <evaluationMessage><![CDATA[0 error(The instance decisionTable_1. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_5, call, decisionTable_1, setResult, dead]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_1. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_5</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_1. does not exist]]></actual>
+                              <expected><![CDATA[dead]]></expected>
+                              <evaluationMessage><![CDATA[dead error(The instance decisionTable_1. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_6, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_1. does not exist]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

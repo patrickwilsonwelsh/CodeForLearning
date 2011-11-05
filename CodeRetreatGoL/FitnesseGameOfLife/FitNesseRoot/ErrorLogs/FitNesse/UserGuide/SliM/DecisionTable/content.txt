@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-11:35:46 AM (EST) on Monday, March 8, 2010-!|
+|'''Test Page: '''|.FitNesse.UserGuide.SliM.DecisionTable|
+|'''Command: '''|!-java -cp fitnesse.jar:fitnesse.jar:classes fitnesse.slim.SlimService  8087-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.402 seconds-!|

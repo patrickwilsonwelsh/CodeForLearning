@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-3:21:27 PM (EST) on Monday, March 8, 2010-!|
+|'''Test Page: '''|.GameOfLifeTestSuite.StillLifeTests|
+|'''Command: '''|!-java -cp /Users/patrick/Documents/workspace/GaleGameOfLifeTeam6/bin/:/Users/patrick/Documents/workspace/GaleGameOfLifeTeam6/resources/fitnesse.jar fitnesse.slim.SlimService  8091-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-1.113 seconds-!|

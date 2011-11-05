@@ -1,0 +1,57 @@
+Given a 3 x 3 grid
+Then cell at 1, 1 should be dead
+And the cells around 1, 1 should have 0 live neighbors
+
+Given a 3 x 3 grid
+When cell at 1, 1 is alive
+Then cell at 1, 1 should be alive
+And the cells around 1, 1 should have 0 live neighbors
+
+Given a 3 x 3 grid
+When cell at 1, 2 is alive
+Then cell at 1, 2 should be alive
+And the cells around 1, 1 should have 1 live neighbors
+
+Given a 3 x 3 grid
+When cell at 1, 1 is alive
+And cell at 1, 2 is alive
+Then cell at 1, 1 should be alive
+And cell at 1, 2 should be alive
+And the cells around 1, 1 should have 1 live neighbors
+
+Given a 3 x 3 grid
+Then the cells around 0, 0 should have 0 live neighbors
+
+Given a 3 x 3 grid
+Then the cells around 2, 2 should have 0 live neighbors
+
+Given a 3 x 3 grid
+Then the cells around 0, 2 should have 0 live neighbors
+
+Given a 3 x 3 grid
+Then the cells around 2, 0 should have 0 live neighbors
+
+Given a 3 x 3 grid
+When cell at 1, 1 is alive
+Then the cells around 2, 2 should have 1 live neighbors
+
+Given a 3 x 3 grid
+When cell at 1, 1 is alive
+And cell at 1, 2 is alive
+Then the cells around 2, 2 should have 2 live neighbors
+
+Given a 3 x 3 grid
+When cell at 2, 2 is alive
+Then the cells around 0, 0 should have 0 live neighbors
+
+Given a 3 x 3 grid
+When cell at 0, 0 is alive
+When cell at 0, 1 is alive
+When cell at 0, 2 is alive
+When cell at 1, 0 is alive
+When cell at 1, 1 is alive
+When cell at 1, 2 is alive
+When cell at 2, 0 is alive
+When cell at 2, 1 is alive
+When cell at 2, 2 is alive
+Then the cells around 1, 1 should have 8 live neighbors

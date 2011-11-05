@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/framework"/>
+	<classpathentry kind="src" path="src/tests"/>
+	<classpathentry kind="lib" path="build/lib/fitlibrary.jar"/>
+	<classpathentry kind="lib" path="build/lib/fitnesse.jar"/>
+	<classpathentry kind="lib" path="build/lib/junit-4.6.jar"/>
+	<classpathentry kind="lib" path="build/lib/selenium-java-client-driver.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

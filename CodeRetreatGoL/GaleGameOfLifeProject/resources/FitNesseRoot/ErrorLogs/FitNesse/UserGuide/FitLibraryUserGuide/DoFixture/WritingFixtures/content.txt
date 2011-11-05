@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-9:42:06 AM (EST) on Wednesday, December 2, 2009-!|
+|'''Test Page: '''|.FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.WritingFixtures|
+|'''Command: '''|!-java -cp fitlibrary.jar:bookExamples.jar:fitnesse.jar:classes fit.FitServer patrickwilsonwelsh-2.local 8090 2-!|
+|'''Exit code: '''|!-5-!|
+|'''Time elapsed: '''|!-0.744 seconds-!|

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="production/source"/>
+	<classpathentry kind="src" output="test/classes" path="test/source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="vendor/jmock-2.6.0-RC1.jar"/>
+	<classpathentry kind="lib" path="vendor/junit-4.7.jar"/>
+	<classpathentry kind="output" path="production/classes"/>
+</classpath>

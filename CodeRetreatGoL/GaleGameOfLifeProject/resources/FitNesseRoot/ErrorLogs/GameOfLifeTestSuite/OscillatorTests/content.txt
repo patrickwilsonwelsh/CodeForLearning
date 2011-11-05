@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-12:37:50 PM (EST) on Tuesday, December 1, 2009-!|
+|'''Test Page: '''|.GameOfLifeTestSuite.OscillatorTests|
+|'''Command: '''|!-java -cp /Users/patrick/Documents/workspace/GaleGameOfLifeProject/bin:/Users/patrick/Documents/workspace/GaleGameOfLifeProject/resources/fitnesse.jar fitnesse.slim.SlimService  8087-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-1.011 seconds-!|

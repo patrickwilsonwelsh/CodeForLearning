@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20090818</FitNesseVersion>
+  <rootPath>WritingFixtures</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <content><![CDATA[<h3>Actions and Methods</h3>Each action in a <i>DoFixture</i> table is mapped directly to a method in the fixture (we'll expand this model in <a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.FixtureDetails">FixtureDetails</a>).<br/><br/>Eg, consider the first few tables:<br/><ul>
+	<li>The fixture of the first table is a <i>DoFixture</i>, so the created <i>flow fixture object</i> handles the rest of the tables:</li>
+</ul>
+<table border="1" cellspacing="0">
+<tr><td class="error">ChatStart<hr/> <span class="fit_label">Could not find fixture: ChatStart.</span></td>
+</tr>
+</table>
+<ul>
+	<li>The second table contains an action, which is mapped into the method <i>connectUser()</i> of the (initial) <i>flow fixture object</i>, as shown below.</li>
+</ul>
+<table border="1" cellspacing="0">
+<tr><td class="error"><i>connect user</i><hr/> <span class="fit_label">Could not find fixture: ConnectUser.</span></td>
+<td>sarah</td>
+</tr>
+</table>
+<ul>
+	<li>The third table contains two actions which are also applied to the <i>flow fixture object</i>.</li>
+</ul>
+<table border="1" cellspacing="0">
+<tr><td class="error"><i>user</i><hr/> <span class="fit_label">Could not find fixture: user.</span></td>
+<td>sarah</td>
+<td><i>creates</i></td>
+<td>fit</td>
+<td><i>room</i></td>
+</tr>
+<tr><td><i>user</i></td>
+<td>sarah</td>
+<td><i>enters</i></td>
+<td>fit</td>
+<td><i>room</i></td>
+</tr>
+</table>
+<br/><h3>Some Example Code</h3><hr/>
+<pre>public class ChatStart extends fitlibrary.DoFixture {<br/>	private ChatRoom chat = new ChatRoom();<br/><br/>	public ChatStart() {<br/>	    setSystemUnderTest(chat);<br/>	}<br/>	public boolean connectUser(String userName) {<br/>		return chat.connectUser(userName);<br/>	}<br/>	public boolean userCreatesRoom(String userName, String roomName) {<br/>		return chat.userCreatesRoom(userName,roomName);<br/>	}<br/>	public boolean userEntersRoom(String userName, String roomName) {<br/>		return chat.userEntersRoom(userName,roomName);<br/>	}<br/>	...<br/></pre><hr/>
+<br/>The next table checks a list.<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>users in room</i><hr/> <span class="fit_label">Could not find fixture: UsersInRoom.</span></td>
+<td>fit</td>
+</tr>
+<tr><td colspan="2"><i>name</i></td>
+</tr>
+<tr><td colspan="2">sarah</td>
+</tr>
+</table>
+<br/>The first row is an action, which corresponds to the method <i>usersInRoom()</i> which returns a <i>ParamRowFixture</i><a title="create page" href="FitLibraryUserGuide.ParamRowFixture?edit&amp;nonExistent=true">[?]</a>. This fixture object interprets the rest of the table.<br/><hr/>
+<pre>	...<br/>	public Fixture usersInRoom(String roomName) {<br/>		return new ParamRowFixture(chat.usersInRoom(roomName).toArray(),User.class);<br/>	}<br/>	...<br/></pre><hr/>
+<br/>Each following table is handled by the initial <i>DoFixture</i>:<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>connect user</i><hr/> <span class="fit_label">Could not find fixture: ConnectUser.</span></td>
+<td>rick</td>
+</tr>
+</table>
+<br/>This means that each table doesn't need an explicit fixture, so actions can be split up easily. Because actions may return a fixture object for the rest of the table, that object can be created with all the appropriate information. This avoids the needs for global variables for communication between fixtures.<br/><br/><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.FixtureDetails">FixtureDetails</a><br/><hr/>
+<ul>
+	<li><i>Copyright (c) 2004, 2005 Rick Mugridge, Rimu Research.</i></li>
+	<li><i>Released under the terms of the GNU General Public License version 2 or later.</i></li>
+</ul>
+<br/>]]></content>
+    <relativePageName>WritingFixtures</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

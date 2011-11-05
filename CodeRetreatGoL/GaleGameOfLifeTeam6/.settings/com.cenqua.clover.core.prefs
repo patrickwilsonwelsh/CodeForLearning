@@ -1,0 +1,20 @@
+#Wed Sep 02 16:13:44 EDT 2009
+block_filters=SourceDirective, cycle
+eclipse.preferences.version=1
+exclude_filter=**/*GameImages.java, **/*GameOfLifeGUI.java,**/*SixGenerationFixture.java
+flush_interval=1000
+flush_policy=0
+include_filter=**/*.java
+init_string=.clover/coverage.db
+init_string_default=true
+init_string_project_relative=true
+instrument_selected_source_folders=false
+instrumented_source_folder_patterns[0]=src\n**/*.java\n\nenabled
+instrumented_source_folder_patterns[1]=test\n**/*.java\n\ndisabled
+instrumented_source_folder_patterns[2]=storytest\n**/*.java\n\ndisabled
+output_root=.clover/bin
+output_root_same_as_project=true
+regexp_filters[0]=true,0,-1,false,cycle,
+should_qualify_java_lang=true
+test_include_filter=**/*Test.java,**/Test*.java
+test_source_folders=0

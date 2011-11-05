@@ -1,0 +1,11 @@
+com.qait.gold.testframework
+com.qait.gold.testframework.fixtures
+com.qait.gold.testframework.fixtures.powersearch
+com.qait.gold.testframework.powersearch
+com.qait.gold.testframework.powersearch.search
+com.qait.gold.testframework.powersearch.search.action
+com.qait.gold.testframework.powersearch.search.ui
+com.qait.gold.testframework.powersearch.search.util
+com.qait.gold.testframework.powersearch.util
+com.qait.gold.testframework.util
+com.qait.gold.tests.powersearch.search.advanced

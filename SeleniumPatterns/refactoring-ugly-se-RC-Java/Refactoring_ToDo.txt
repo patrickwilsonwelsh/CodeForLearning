@@ -1,0 +1,27 @@
+Where to get this codebase:
+
+https://github.com/PillarTechnology/SeleniumPatterns/tree/master/refactoring-ugly-se-RC-Java
+
+------------------------
+
+Big Chunky Refactoring goals:
+
+
+Extract one Page Object
+
+Remove references to selenium itself from tests
+
+Extract the HTMl Element objects required by that Page Object
+
+Extract another Page Object
+
+Extract the common Page Object behaviors into a base class
+
+Make the Page Objects self verifying
+
+Create Link objects that "know" how to get to their Page Objects, contextually
+
+Convert all Xpath to CSS selector syntax (check execution times against various browsers, esp IE variants)
+
+Review
+

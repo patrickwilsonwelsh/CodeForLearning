@@ -1,0 +1,53 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="gtaf">
+    <groups>
+    </groups>
+    <test name="com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase">
+      <class name="com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase">
+        <test-method status="FAIL" signature="setupSelenium()" name="setupSelenium" is-config="true" duration-ms="0" started-at="2009-08-17T16:20:58Z" finished-at="2009-08-17T16:20:58Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/mortbay/http/HttpHandler]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/mortbay/http/HttpHandler
+	at com.qait.gold.testframework.selenium.util.SeleniumProxySingleton.startJettyProxy(SeleniumProxySingleton.java:35)
+	at com.qait.gold.testframework.selenium.util.SeleniumProxySingleton.makeSureWeHaveAJettyProxyRunning(SeleniumProxySingleton.java:21)
+	at com.qait.gold.testframework.selenium.util.SeleniumSingletonFactory.getInstance(SeleniumSingletonFactory.java:14)
+	at com.qait.gold.testframework.powersearch.PowerSearchTestCase.setupSelenium(PowerSearchTestCase.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:398)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:82)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:278)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:198)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:823)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:790)
+	at org.testng.TestNG.run(TestNG.java:708)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:73)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:124)
+Caused by: java.lang.ClassNotFoundException: org.mortbay.http.HttpHandler
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	... 19 more
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="tearDownSelenium()" name="tearDownSelenium" is-config="true" duration-ms="0" started-at="2009-08-17T16:20:59Z" finished-at="2009-08-17T16:20:59Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,22 @@
+Principles and Techniques We Will Mostly Use:
+
+Renaming
+
+Emergent/Incremental Design
+
+DRY ("Don't Repeat Yourself")
+
+Extract Method
+
+Extract Class
+
+Move Method
+
+Extract Package
+
+Introduce Facade Pattern
+
+Introduce Decorator Pattern
+
+
+

@@ -1,0 +1,28 @@
+
+In this exercise, your goal is to test-drive an object model that calculates the total distance 
+(in miles) and duration (in days and hours) of a trip from a city on one coast to a city on the other, 
+traversing a specific set of cities along the way, for a family in a minivan. 
+
+The catch is that you must implement a doubly-linked ring to represent the trip as Legs, where each Leg 
+has a starting and ending Place, and you must not use any Java (or Google or other) collections. 
+
+Some other contraints apply.
+
+This doubly-linked ring (a Trip class) must support the following API:
+
+-- addStop(Place place);
+-- removeStop(Place place);
+
+Further, a Place must support this API: 
+
+-- designateAsStopOver(Place place);
+
+A StopOver can be either a HotelStay or CampgroundStay; all of these implement or extend Place. 
+The minimum duration for a HotelStay is 12 hours. 
+The minimum duration for a CampgroundStay is 14 hours. 
+
+Our poor family is budget-constrained: they cannot afford more than 3 HotelStays. Every other StopOver must be a CampgroundStay. 
+
+I'll make up more evil constraints as I think of them. That's all for now. :)
+
+----------------

@@ -1,0 +1,3 @@
+Given a new 9 by 9 grid
+When grid is asked for Neighborhood around center cell position
+Then neighborhood should contain $center cell and at least three other cells

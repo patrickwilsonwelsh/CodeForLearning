@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="gtaf">
+  <test verbose="2" name="com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase" annotations="JDK">
+    <classes>
+      <class name="com.qait.gold.tests.powersearch.search.advanced.SimpleAuthorSearchTestCase"/>
+    </classes>
+  </test>
+</suite>

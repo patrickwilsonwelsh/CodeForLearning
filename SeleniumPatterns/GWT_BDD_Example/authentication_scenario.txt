@@ -1,0 +1,6 @@
+
+
+GIVEN an unathenticated user cannot access restricted content
+WHEN unathenticated user authentices successfully
+THEN authenticated user gains access access to restricted content
+

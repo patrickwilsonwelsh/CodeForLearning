@@ -1,0 +1,21 @@
+!1 Testing "Still-Life" Stable Game of Life Patterns
+
+!3 Empty Grid Remains Empty
+|six generation fixture|
+|start|cycle 1?|cycle 2?|cycle 3?|cycle 4?|cycle 5?|cycle 6?|
+|____!-<br>-!____!-<br>-!____|____!-<br>-!____!-<br>-!____|____!-<br>-!____!-<br>-!____|____!-<br>-!____!-<br>-!____|____!-<br>-!____!-<br>-!____|____!-<br>-!____!-<br>-!____|____!-<br>-!____!-<br>-!____|
+
+!3 Lone Block Remains Stable
+|six generation fixture|
+|start|cycle 1?|cycle 2?|cycle 3?|cycle 4?|cycle 5?|cycle 6?|
+|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|____!-<br>-!_XX_!-<br>-!_XX_!-<br>-!____|
+
+!3 "Bee-Hive" Remains Stable
+|six generation fixture|
+|start|cycle 1?|cycle 2?|cycle 3?|cycle 4?|cycle 5?|cycle 6?|
+|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|______!-<br>-!__XX__!-<br>-!_X__X_!-<br>-!__XX__!-<br>-!______|
+
+!3 "Snake" Remains Stable
+|six generation fixture|
+|start|cycle 1?|cycle 2?|cycle 3?|cycle 4?|cycle 5?|cycle 6?|
+|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|______!-<br>-!_XX_X_!-<br>-!_X_XX_!-<br>-!______|

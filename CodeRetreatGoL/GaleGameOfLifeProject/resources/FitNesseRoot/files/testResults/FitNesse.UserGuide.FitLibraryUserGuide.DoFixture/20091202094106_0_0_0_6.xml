@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20090818</FitNesseVersion>
+  <rootPath>DoFixture</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <content><![CDATA[<h3>Contents</h3><ul>
+	<li>Introduction</li>
+	<li><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.WhenActionsFail">^WhenActionsFail</a></li>
+	<li><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.DoFixtureSummary">^DoFixtureSummary</a></li>
+	<li><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.WritingFixtures">^WritingFixtures</a></li>
+	<li><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.FixtureDetails">^FixtureDetails</a></li>
+	<li><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.SetUpTearDown">^SetUpTearDown</a></li>
+</ul>
+<h3>Introduction</h3><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture">DoFixture</a> tables are used to define/test workflow, a sequence of actions. The aim is to make the tests easily readable.<br/><br/>Let's look at a simple example test (which you can run).<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error">ChatStart<hr/> <span class="fit_label">Could not find fixture: ChatStart.</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>connect user</i><hr/> <span class="fit_label">Could not find fixture: ConnectUser.</span></td>
+<td>sarah</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>user</i><hr/> <span class="fit_label">Could not find fixture: user.</span></td>
+<td>sarah</td>
+<td><i>creates</i></td>
+<td>fit</td>
+<td><i>room</i></td>
+</tr>
+<tr><td><i>user</i></td>
+<td>sarah</td>
+<td><i>enters</i></td>
+<td>fit</td>
+<td><i>room</i></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>users in room</i><hr/> <span class="fit_label">Could not find fixture: UsersInRoom.</span></td>
+<td>fit</td>
+</tr>
+<tr><td colspan="2"><i>name</i></td>
+</tr>
+<tr><td colspan="2">sarah</td>
+</tr>
+</table>
+<br/>The tables define/test the following sequence:<br/><ul>
+	<li>Start the System Under Test, a chat server</li>
+	<li>Anna connects to the chat server</li>
+	<li>Anna creates a new room and enters it</li>
+	<li>Check that Sara is the only occupant of that room</li>
+</ul>
+Unlike with the core fixtures, the first row of each table (other than the first) doesn't usually name a fixture.<br/><br/>Each row of the second and third tables define actions. Eg consider the following table:<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>user</i><hr/> <span class="fit_label">Could not find fixture: user.</span></td>
+<td>sarah</td>
+<td><i>enters</i></td>
+<td>fit</td>
+<td><i>room</i></td>
+</tr>
+</table>
+<br/>The first, third and fifth cells contain <i>keywords</i>, which give information about the role of the data that's in the second and fourth cells ("anna" and "lotr"). The <i>keywords</i> are shown in <i>italics</i> and are often colored when the tst is run (try it now). The keywords all joined together give the name of the action, <i>user enters room</i>.<br/><br/>The fourth table is a little different, as it's checking the list of users in the given room:<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error"><i>users in room</i><hr/> <span class="fit_label">Could not find fixture: UsersInRoom.</span></td>
+<td>fit</td>
+</tr>
+<tr><td colspan="2"><i>name</i></td>
+</tr>
+<tr><td colspan="2">sarah</td>
+</tr>
+</table>
+<br/>The first row is an action, as before, with <i>keywords</i> and data alternating. This serves a similar purpose to a fixture name, but is an action which provides an appropriate fixture.<br/><br/>The rest of the table is like a RowFixture table. The second row gives the <i>header labels</i> and there is a single element expected in the list.<br/><br/>Let's look at what happens <i><a href="FitNesse.UserGuide.FitLibraryUserGuide.DoFixture.WhenActionsFail">^WhenActionsFail</a></i>.<br/><hr/>
+<ul>
+	<li><i>Copyright (c) 2004, 2005 Rick Mugridge, Rimu Research.</i></li>
+	<li><i>Released under the terms of the GNU General Public License version 2 or later.</i></li>
+</ul>
+]]></content>
+    <relativePageName>DoFixture</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

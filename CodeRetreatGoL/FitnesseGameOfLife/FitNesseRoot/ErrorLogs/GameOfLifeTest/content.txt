@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-7:14:46 PM (EST) on Monday, March 8, 2010-!|
+|'''Test Page: '''|.GameOfLifeTest|
+|'''Command: '''|!-java -cp fitnesse.jar:/Users/patrick/Documents/workspace/SmallFitnesseGameOfLife/./target/test-classes:/Users/patrick/Documents/workspace/SmallFitnesseGameOfLife/./target/classes:/Users/patrick/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar fitnesse.slim.SlimService  8089-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-1.91 seconds-!|

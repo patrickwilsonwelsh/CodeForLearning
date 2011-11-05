@@ -1,0 +1,32 @@
+!*> setup
+|import            |
+|fixture        |
+
+
+!pomFile ./pom.xml
+
+!define TEST_SYSTEM {slim}
+
+*!
+
+
+|what is cell state after a single generation        |
+|starting state|neighbour count|state after next generation?|
+|alive|0              |dead   |
+|alive|1              |dead   |
+|alive|2              |alive  |
+|alive|3              |alive  |
+|alive|4              |dead   |
+|alive|5              |dead   |
+|alive|6              |dead   |
+|alive|7              |dead   |
+|alive|8              |dead   |
+|dead |0              |dead   |
+|dead |1              |dead   |
+|dead |2              |dead   |
+|dead |3              |alive  |
+|dead |4              |dead   |
+|dead |5              |dead   |
+|dead |6              |dead   |
+|dead |7              |dead   |
+|dead |8              |dead   |
